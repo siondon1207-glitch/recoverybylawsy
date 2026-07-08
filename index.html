@@ -1,23 +1,631 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "도박 채무 개인회생 법률 정보 센터",
+        "url": "https://legal.reliabledone.com/rehabilitation"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "개인회생 도박 채무 완벽 정리 가이드: 2026년 법원별 변제율과 면책 최적화 전략",
+        "image": "https://example.com/images/gambling-rehabilitation.jpg",
+        "datePublished": "2026-04-22T00:00:00+09:00",
+        "author": {
+            "@type": "Person",
+            "name": "회생법률 전문가 이지성"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "도박 회생 컨설팅 연구소",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://example.com/images/logo.png"
+            }
+        },
+        "description": "도박, 비트코인, 주식 투자로 인한 채무에 대한 2026년 최신 개인회생 절차 및 변제율 인하 전략 분석 가이드."
+    }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: #f4f6f9;
+            color: #2c3e50;
+        }
+        header, section, footer {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 35px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+        h1, h2, h3 {
+            color: #1a365d;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -0.03em;
+        }
+        h1 {
+            font-size: 2.4rem;
+            text-align: center;
+            margin-top: 40px;
+            color: #1e3a8a;
+            padding: 15px 0;
+            border-bottom: 4px double #3b82f6;
+        }
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 12px;
+            margin-top: 45px;
+        }
+        h3 {
+            font-size: 1.3rem;
+            color: #2563eb;
+            border-left: 4px solid #3b82f6;
+            padding-left: 12px;
+            margin-top: 30px;
+        }
+        p, ul, ol, li, dl, dt, dd {
+            font-size: 1.05rem;
+            color: #4a5568;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        ul, ol {
+            padding-left: 24px;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #1d4ed8;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.95rem;
+        }
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 14px;
+            text-align: left;
+        }
+        th {
+            background-color: #f1f5f9;
+            color: #0f172a;
+            font-weight: 600;
+            text-align: center;
+        }
+        .table-alt td:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        .btn-cta {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 16px 24px;
+            background: #2563eb;
+            color: #ffffff;
+            font-weight: 700;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+            transition: background-color 0.2s, transform 0.1s;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            font-size: 1.1rem;
+        }
+        .btn-cta:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 40px 0;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        nav ul li a {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #4b5563;
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid #cbd5e1;
+            background-color: #ffffff;
+            transition: all 0.2s ease;
+        }
+        nav ul li a:hover,
+        nav ul li a:focus {
+            background-color: #f1f5f9;
+            color: #1e3a8a;
+            border-color: #1e3a8a;
+            outline: none;
+        }
+        form {
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+        form label {
+            font-weight: 600;
+            display: block;
+            margin: 16px 0 6px 0;
+            font-size: 0.95rem;
+            color: #334155;
+        }
+        form input[type="text"],
+        form input[type="tel"],
+        form input[type="email"],
+        form input[type="number"],
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #cbd5e1;
+            font-size: 0.95rem;
+            transition: border-color 0.2s ease;
+            resize: vertical;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+        form input:focus,
+        form select:focus,
+        form textarea:focus {
+            border-color: #3b82f6;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        }
+        .anchor {
+            display: block;
+            position: relative;
+            top: -100px;
+            visibility: hidden;
+        }
+        footer p {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #6b7280;
+            padding: 15px 0;
+            border-top: 1px solid #e5e7eb;
+            margin: 0;
+        }
+        .highlight {
+            font-weight: 700;
+            color: #e53e3e;
+            background-color: #fef2f2;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .note-box {
+            background-color: #eff6ff;
+            border-left: 4px solid #2563eb;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 6px;
+        }
+        @media(max-width: 768px) {
+            nav ul {
+                gap: 8px;
+            }
+            nav ul li a {
+                font-size: 0.85rem;
+                padding: 6px 12px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+            header, section, footer {
+                margin: 15px 10px;
+                padding: 20px 15px;
+            }
+            .btn-cta {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>개인회생 도박 채무 해결법: 2026년 법원별 심사 기준과 면책 최적화 전략</h1>
+    <p>도박, 비트코인, 해외선물 및 가상화폐 투자 실패로 발생한 감당하기 힘든 부채를 안고 있다면 2026년 최신 법원 실무 기준에 맞춘 정교한 회생 설계를 통해 합법적인 빚 탕감과 신속한 신용 재기를 모색할 수 있습니다.</p>
+    <button class="btn-cta" onclick="location.href='#quote-form'">실시간 1대1 맞춤 회생 가능성 진단받기</button>
+</header>
+
+<nav aria-label="페이지 내 주요 정보">
+    <ul>
+        <li><a href="#overview">도박 회생의 법적 진실</a></li>
+        <li><a href="#court-trends">2026년 법원별 심사 기준</a></li>
+        <li><a href="#age-analysis">연령대별 도박 채무 경향</a></li>
+        <li><a href="#liquidation-principle">청산가치 보장 원칙과 계산</a></li>
+        <li><a href="#pros-cons">회생과 신용회복 비교</a></li>
+        <li><a href="#advocacy-tips">법원 설득 및 변제율 하향 노하우</a></li>
+        <li><a href="#rehab-calculator">2026년 회생 예상 변제금 계산기</a></li>
+        <li><a href="#community-feedback">온라인 커뮤니티 여론 및 후기</a></li>
+        <li><a href="#faq">자주 묻는 질문</a></li>
+        <li><a href="#trust-sites">신뢰할 수 있는 외부 정보원</a></li>
+        <li><a href="#quote-form">무료 상세 상담 신청</a></li>
+    </ul>
+</nav>
+
+<section id="overview">
+    <span id="overview-anchor" class="anchor"></span>
+    <h2>도박 및 투자 채무 개인회생의 법적 오해와 진실</h2>
+    <p>인터넷 커뮤니티나 잘못된 소문을 접한 많은 채무자들은 사설 스포츠 토토, 바카라, 경마, 해외 카지노와 같은 도박 빚 혹은 과도한 비트코인이나 해외 주식 레버리지 투자로 생긴 부채는 개인회생 신청 자체가 불가능하거나 무조건 원금 100%를 변제해야 한다고 잘못 알고 있습니다. 하지만 이는 명백한 사실이 아닙니다.</p>
+    <p>대한민국 채무자 회생 및 파산에 관한 법률에 따르면, 개인파산의 경우 과도한 낭비, 사치, 도박이 법률상 면책불허가 사유로 명시되어 있어 기각될 가능성이 대단히 높습니다. 하지만 개인회생 제도는 다릅니다. 개인회생에서는 채무의 발생 원인이 사행성 오락이나 도박, 무리한 투자 실패라 할지라도 이를 기각 사유로 삼지 않으며 성실히 경제활동을 지속하며 채무를 변제해 나갈 의지만 소명한다면 정상적인 접수 및 개시 결정이 가능합니다.</p>
+    <p>중요한 차이점은 법원이 도박으로 낭비된 자금을 어떻게 취급하느냐에 있습니다. 도박 채무는 일반적인 사업 실패나 생활비 부족으로 인한 대출보다 회생 위원의 보정 권고 및 법원의 심사가 까다로운 것이 사실입니다. 그러나 도박 중독을 극복하려는 적극적인 사회적 활동과 정교한 변제계획 작성을 바탕으로 꼼꼼한 컨설팅을 받는다면, 법원을 합리적으로 설득하여 원금의 70%에서 80%에 달하는 높은 수준의 탕감률을 달성하는 사례도 빈번히 존재합니다.</p>
+    
+    <h3>일반 채무 회생과 도박성 채무 회생의 비교</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>비교 항목</th>
+                <th>일반 생계형 및 사업 실패 채무</th>
+                <th>도박, 주식 및 코인 투자 채무</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>신청 및 인가 적격성</td>
+                <td>조건 충족 시 즉각적이고 안정적인 인가 가능</td>
+                <td>인가 자체는 가능하나 소명 자료 제출 요구가 많음</td>
+            </tr>
+            <tr>
+                <td>청산가치 반영 방식</td>
+                <td>보유 중인 실제 적극적 재산만 산입</td>
+                <td>도박에 사용한 자금의 일부 또는 전체가 재산으로 의제될 수 있음</td>
+            </tr>
+            <tr>
+                <td>최저 변제율 수준</td>
+                <td>평균적으로 소득 대비 최저생계비 공제 후 책정</td>
+                <td>도박 비중에 따라 변제율이 다소 상향될 여지 존재</td>
+            </tr>
+            <tr>
+                <td>변제 기간 설정</td>
+                <td>일반적으로 36개월(3년) 원칙</td>
+                <td>보정 과정에서 최대 60개월(5년)까지 연장 권고 가능</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<hr>
+
+<section id="court-trends">
+    <span id="court-trends-anchor" class="anchor"></span>
+    <h2>전국 주요 법원 관할별 도박 회생 심사 경향 분석</h2>
+    <p>대한민국의 각 지방법원 및 회생법원은 지역 관할에 따라 심사 기준의 유연성이 다릅니다. 서울회생법원을 비롯하여, 인천지방법원, 수원회생법원 등 경기도 지역(고양, 용인, 성남, 부천, 화성, 안산, 남양주, 안양, 평택, 시흥 등)을 담당하는 법원들은 주식이나 코인뿐만 아니라 일부 도박 채무에 대해서도 채무자의 회생 의지를 적극적으로 검토하는 경향이 있습니다. 반면, 강원도 지역(춘천, 원주, 강릉 등)과 충청북도(청주, 충주 등), 충청남도(천안, 아산 등) 지역을 관할하는 대전지방법원 및 청주지방법원은 도박 채무의 발생 경위를 더욱 엄격하게 들여다봅니다. 또한, 전라북도(전주, 군산 등)와 전라남도(여수, 순천, 목포 등)를 관할하는 광주 및 전주지방법원, 경상북도(포항, 경주, 구미 등)를 관할하는 대구지방법원, 그리고 경상남도(창원, 김해, 양산 등)와 부산, 울산 지역을 담당하는 부산회생법원 및 울산지방법원, 마지막으로 제주도와 세종 지역 법원까지 각 관할법원마다 회생 위원의 보정 권고 성향에 미세한 차이점이 존재합니다.</p>
+    <div class="note-box">
+        <h3>서울회생법원과 지방법원의 실무 준칙 차이점</h3>
+        <p>서울회생법원은 실무준칙 제408호를 통해 주식 및 가상화폐 투자 손실금을 채무자의 청산가치에 반영하지 않도록 명시적으로 선언한 바 있으며, 수원과 부산 역시 이를 도입하였습니다. 그러나 사설 스포츠 토토나 불법 도박의 경우에는 준칙을 엄격하게 해석하여 여전히 손실금의 상당 부분을 청산가치에 포함하라고 보정 명령을 내리는 지방 법원들이 대다수입니다. 따라서 본인의 주민등록상 주소지 또는 직장 주소지에 따른 관할 법원의 성향을 면밀히 파악하고 맞춤형 대응 논리를 수립하는 전문가의 컨설팅이 무엇보다 우선시됩니다.</p>
+    </div>
+</section>
+
+<hr>
+
+<section id="age-analysis">
+    <span id="age-analysis-anchor" class="anchor"></span>
+    <h2>연령대별 도박 및 사행성 채무 발생의 양상과 사회적 배경</h2>
+    <p>최근 도박 채무로 인해 개인회생을 신청하는 연령대는 매우 다양합니다. 과거에는 주로 경제적 자립도가 부족한 20대와 30대 사회 초년생들이 불법 스포츠 토토나 바카라 등으로 빚을 지는 경우가 많았지만, 최근에는 40대와 50대 장년층뿐만 아니라 60대 은퇴 세대까지도 모바일 온라인 게임이나 주식, 코인 선물 투자 등의 도박성 사행행위로 인해 재정적 한계에 부딪혀 법률 상담과 컨설팅을 요청하고 있습니다.</p>
+    <ul>
+        <li><strong>20대 및 30대 청년층:</strong> 모바일 앱과 어플의 대중화로 스마트폰을 통해 사설 스포츠 토토나 온라인 실시간 게임에 쉽게 가입하고 빠져드는 비율이 높습니다. 소득 수준이 높지 않은 상황에서 비정상적인 경로로 자금을 조달하다 보니 빚이 순식간에 불어나는 양상을 보입니다.</li>
+        <li><strong>40대 및 50대 중장년층:</strong> 무리한 주식 레버리지 신용 거래나 선물 옵션 투자, 혹은 오프라인 카지노 및 사설 도박장 출입으로 인한 대규모 채무가 주를 이룹니다. 가정을 책임져야 하는 나이대인 만큼 부양가족 생계비를 보전받는 최적의 회생 절차 설계가 절실합니다.</li>
+        <li><strong>60대 이상 실버층:</strong> 은퇴 자금이나 노후 연금을 단기간에 불리려는 목적으로 무리한 유사수신 행위나 사행성 슬롯머신, 불법 경마 등에 가입하여 파탄에 이르는 상황이 많습니다. 이 경우 최저생계 수준을 위협받기 쉬워 신속한 면책이 요구됩니다.</li>
+    </ul>
+</section>
+
+<hr>
+
+<section id="liquidation-principle">
+    <span id="liquidation-principle-anchor" class="anchor"></span>
+    <h2>청산가치 보장의 원칙과 도박 채무 산정 메커니즘</h2>
+    <p>개인회생 제도의 근간을 이루는 가장 중요한 개념은 바로 청산가치 보장의 원칙입니다. 이는 채무자가 회생 기간 동안 변제하는 총금액의 현재가치가 채무자가 현재 가진 모든 재산을 처분했을 때의 가치보다 반드시 커야 한다는 원칙입니다.</p>
+    <p>일반 채무자의 경우 본인 소유의 부동산, 자동차, 임차보증금, 예적금 등이 청산가치(재산목록)에 합산됩니다. 하지만 도박 채무자의 경우 법원은 도박으로 탕진하거나 인출된 자금의 상당 부분을 여전히 채무자의 마음속 어딘가에 남아 있거나 몰래 은닉해 둔 재산으로 간주하여 재산목록에 추가하라는 보정 권고를 내리곤 합니다.</p>
+    <p>예를 들어, 총채무 1억 원 중 6천만 원을 불법 바카라 사이트에서 일방적으로 잃었을 때, 지방의 일부 보수적인 법원에서는 이 6천만 원 전체를 채무자의 청산가치에 산입하라고 합니다. 이 경우 채무자의 청산가치가 최소 6천만 원으로 잡히기 때문에, 채무자는 3년에서 5년 동안 법원에 납부하는 총 변제 금액이 무조건 6천만 원을 넘어야 인가를 받을 수 있습니다. 따라서 이 청산가치의 산입 비중을 변호사나 법무사의 법리적 소명을 통해 최대한 낮추는 것이 변제율을 깎고 빚을 더 많이 감면받을 수 있는 핵심 기법입니다.</p>
+</section>
+
+<hr>
+
+<section id="pros-cons">
+    <span id="pros-cons-anchor" class="anchor"></span>
+    <h2>개인회생과 신용회복위원회 채무조정 제도의 장단점 비교</h2>
+    <p>도박 빚을 청산하려는 분들이 가장 먼저 고민하는 대안으로 법원의 개인회생과 신용회복위원회의 사적 채무조정(신용회복)이 있습니다. 이 두 제도는 뚜렷한 차이점과 장단점을 가지고 있으므로 본인의 채무 규모와 채권자의 종류에 따라 유리한 방식을 신중하게 비교 분석해야 합니다.</p>
+    
+    <h3>두 채무조정 제도의 결정적 차이점</h3>
+    <ul>
+        <li><strong>채권자 동의 여부:</strong> 신용회복위원회의 워크아웃은 채권 금융기관 동의율이 과반을 넘어야 추진이 가능하지만 법원의 개인회생은 채권자의 동의 여부와 무관하게 법적 강제력으로 부채를 조정합니다. 사채나 일수, 사설 대부업체 빚이 섞여 있다면 회생만이 유일한 해법입니다.</li>
+        <li><strong>도박 채무 감면률:</strong> 신용회복위원회의 경우 연체 기간에 따라 이자는 전액 감면받을 수 있으나 도박성 채무로 판명될 경우 원금 감면 혜택은 극히 제한적입니다. 반면 개인회생은 법률 대리인의 정밀한 소명 전략에 따라 원금 자체를 최대 90%까지 대폭 할인 및 탕감받는 기회를 기대할 수 있습니다.</li>
+        <li><strong>금지명령 및 독촉 방지 효과:</strong> 개인회생은 접수 후 평균 3일에서 7일 이내에 법원의 금지명령이 내려져 은행, 카드사, 대부업체는 물론 채권 추심 업체의 전화 연락, 독촉장 송부, 통장 압류 시도를 다이렉트로 완벽하게 차단합니다.</li>
+    </ul>
+</section>
+
+<hr>
+
+<section id="advocacy-tips">
+    <span id="advocacy-tips-anchor" class="anchor"></span>
+    <h2>법원을 설득하여 변제율을 낮추는 실무상 대응 전략</h2>
+    <p>도박 채무 회생을 성공적으로 안착시키고 다이렉트로 낮은 변제 금액을 얻어내기 위해서는 재판부와 회생 위원의 마음을 돌릴 수 있는 진정성 있는 소명 자료 제출이 동반되어야 합니다. 단순히 반성한다는 말 한마디로는 냉혹한 법원을 설득하기 어렵습니다.</p>
+    
+    <h3>구체적인 소명자료 및 법리 설계법</h3>
+    <ol>
+        <li><strong>도박 중독 예방 및 치유원 활동 참여:</strong> 한국도박문제예방치유원 등 공인 기관에서 정기적인 상담과 교육을 이수하고 있다는 증명서를 적극 제출합니다. 이는 도박의 재발 가능성이 없음을 객관적으로 증명하는 가장 확실한 카드입니다.</li>
+        <li><strong>상세한 금융거래 내역 분석 및 소명서 작성:</strong> 주거래 통장 1년 내지 3년치 거래 기록에서 입출금된 도박 자금의 구체적 경로를 빠짐없이 엑셀로 정리하고 본인의 도박 중독 경위와 실제 손실 상태를 정직하게 소명해야 합니다. 자료를 은닉하려다 적발되면 회생 자체가 성실성 결여로 기각될 위험이 있습니다.</li>
+        <li><strong>반성문 및 탄원서의 주기적 제출:</strong> 어설픈 양식의 반성문이 아닌 채무가 발생하게 된 비극적인 스토리와 향후 성실한 납부 계획을 손글씨로 직접 작성하여 진심을 담아 전달해야 합니다. 가족이나 주변인들의 탄원서 역시 선처를 구하는 데 긍정적 요소로 작용합니다.</li>
+    </ol>
+</section>
+
+<hr>
+
+<section id="rehab-calculator">
+    <span id="rehab-calculator-anchor" class="anchor"></span>
+    <h2>2026년 개인회생 예상 변제금 자가 시뮬레이션 계산기</h2>
+    <p>아래 자가 진단 계산기에 본인의 현재 월평균 소득, 총채무액, 도박 채무의 비중, 그리고 실제 부양가족 수를 정확히 입력하시면 2026년도 개정 법정 생계비 요율에 근거하여 예상되는 월 변제 금액과 예상 탕감률 결과를 확인하실 수 있습니다.</p>
+
+    <form id="rehabilitation-calc-form" action="#" method="GET" onsubmit="return false;" style="max-width:800px; margin:auto;">
+        <label for="calc-income">월 평균 세후 소득 (원 단위로 입력)</label>
+        <input type="number" id="calc-income" name="calc_income" placeholder="예: 2500000 (이천오백만 원인 경우 2500000)" required />
+
+        <label for="calc-debt">총 채무액 (원 단위로 입력)</label>
+        <input type="number" id="calc-debt" name="calc_debt" placeholder="예: 80000000 (팔천만 원인 경우 80000000)" required />
+
+        <label for="calc-gambling-ratio">총 채무 중 도박 및 가상자산 투자 실패 비중</label>
+        <select id="calc-gambling-ratio" name="calc_gambling_ratio">
+            <option value="0.1">10% 미만 (미미한 수준)</option>
+            <option value="0.3">30% 수준 (부분적 도박 채무)</option>
+            <option value="0.6">60% 수준 (높은 비중의 사행행위 채무)</option>
+            <option value="0.9">80% 이상 (대부분이 도박 및 투자 손실)</option>
+        </select>
+
+        <label for="calc-dependents">본인 포함 가구원 수 (부양가족 기준)</label>
+        <select id="calc-dependents" name="calc_dependents">
+            <option value="1">1인 가구 (단독 신청)</option>
+            <option value="2">2인 가구 (배우자 혹은 자녀 1인 부양)</option>
+            <option value="3">3인 가구 (부양가족 2인)</option>
+            <option value="4">4인 가구 이상 (부양가족 3인 이상)</option>
+        </select>
+
+        <button class="btn-cta" onclick="calculateRehabilitation()">예상 변제금 및 탕감률 계산 실행</button>
+    </form>
+
+    <div id="calc-result" style="margin-top:30px; font-size:1.15rem; font-weight:600; color:#1e3a8a; text-align:center; padding: 20px; border: 2px solid #cbd5e1; border-radius: 8px; background-color: #f8fafc; min-height: 50px;">
+        상단에 세부 수치를 기재한 뒤 계산 버튼을 누르시면 모의 진단 결과가 여기에 도출됩니다.
+    </div>
+
+    <script>
+        function calculateRehabilitation() {
+            const income = parseInt(document.getElementById('calc-income').value);
+            const debt = parseInt(document.getElementById('calc-debt').value);
+            const gamblingRatio = parseFloat(document.getElementById('calc-gambling-ratio').value);
+            const dependents = parseInt(document.getElementById('calc-dependents').value);
+
+            if (!income || !debt) {
+                document.getElementById('calc-result').innerHTML = '<span style="color:#e53e3e">필수 항목(월 평균 소득, 총 채무액)을 모두 입력해주세요.</span>';
+                return;
+            }
+
+            // 2026년 기준 중위소득의 60%를 반영한 최저생계비 대략 산정
+            let livingCost = 1400000; 
+            if (dependents === 2) {
+                livingCost = 2300000;
+            } else if (dependents === 3) {
+                livingCost = 2950000;
+            } else if (dependents >= 4) {
+                livingCost = 3550000;
+            }
+
+            let disposableIncome = income - livingCost;
+            if (disposableIncome <= 0) {
+                document.getElementById('calc-result').innerHTML = '<span style="color:#e53e3e">소득이 법정 최저생계비보다 적습니다. 부양가족 범위 재산정이나 추가 생계 수단 확보에 대한 상세 컨설팅 상담이 권장됩니다.</span>';
+                return;
+            }
+
+            // 도박 비중에 따른 가중 기간 산정 (기본 36개월 ~ 최대 60개월)
+            let period = 36;
+            if (gamblingRatio >= 0.8) {
+                period = 60;
+            } else if (gamblingRatio >= 0.5) {
+                period = 48;
+            }
+
+            let totalRepayment = disposableIncome * period;
+
+            // 청산가치 반영에 따른 최저 한도 보장 계산
+            let estimatedLiquidation = debt * gamblingRatio * 0.35; 
+            if (totalRepayment < estimatedLiquidation) {
+                totalRepayment = estimatedLiquidation;
+                disposableIncome = Math.round(totalRepayment / period);
+            }
+
+            if (totalRepayment > debt) {
+                totalRepayment = debt;
+                disposableIncome = Math.round(debt / period);
+            }
+
+            const repaymentRate = Math.round((totalRepayment / debt) * 100);
+            const tangGamRate = 100 - repaymentRate;
+
+            document.getElementById('calc-result').innerHTML = 
+                '가상 분석 결과 (보수적 시뮬레이션 요약)<br>' +
+                '예상 월 납입 변제금: <span class="highlight">' + disposableIncome.toLocaleString() + ' 원</span><br>' +
+                '산정된 변제 기간: <strong>' + period + '개월</strong><br>' +
+                '납부 총액 합계: <strong>' + totalRepayment.toLocaleString() + ' 원</strong><br>' +
+                '총 감면 추정 비율: <span class="highlight" style="color: #2563eb; background-color: #eff6ff;">약 ' + tangGamRate + '% 원금 면책 예상</span> (변제율 ' + repaymentRate + '%)';
+        }
+    </script>
+</section>
+
+<hr>
+
+<section id="community-feedback">
+    <span id="community-feedback-anchor" class="anchor"></span>
+    <h2>온라인 대형 커뮤니티 여론 및 내돈내산 회생 후기 분석</h2>
+    <p>개인회생을 진지하게 고민하는 분들은 디시, 보배드림, 펨코, 에펨코리아 등 다채로운 인터넷 포럼 사이트에서 실제 진행 중인 사용자들의 내돈내산 성공 후기나 생생한 진행 과정 피드백을 수집하여 객관적인 동향을 분석하고 있습니다.</p>
+    <p>커뮤니티 내 여론을 살펴보면 사설 토토나 도박 빚으로 일상이 붕괴된 이들이 법무법인이나 변호사 전문 업체를 통해 채무의 악순환에서 벗어난 실제 사연이 매주 업데이트되고 있습니다. 많은 유저들은 광고글에 속지 않고 직접 가격이나 견적을 비교해 수임료를 분납할 수 있는 착하고 합리적인 곳을 선택해야 장기적인 변제 기간 동안 중도 포기 없이 무사히 면책까지 도달할 수 있다고 입을 모아 조언합니다. 특히 최근에는 제미나이(Gemini)나 챗지피티(ChatGPT)와 같은 수준 높은 AI 및 생성형 인공지능 어플을 이용하여 본인의 변제 가능성과 대략적인 비용 및 예상 금액을 미리 확인하고 상담에 임하는 스마트한 신청자들도 큰 폭으로 늘고 있는 추세입니다.</p>
+</section>
+
+<hr>
+
+<section id="faq">
+    <span id="faq-anchor" class="anchor"></span>
+    <h2>자주 묻는 질문 (FAQ)</h2>
+    <dl>
+        <dt>도박 빚이 있으면 법원 접수 시 기각당할 확률이 매우 높지 않나요?</dt>
+        <dd>그렇지 않습니다. 채무자회생법상 기각 사유는 서류 미비, 기한 불준수, 허위 진술 등으로 엄격하게 한정되어 있습니다. 도박이나 주식 실패는 기각 사유에 포함되지 않으므로, 사실대로 부채 상황을 소명하고 성실히 임한다면 정상적인 통과가 보장됩니다.</dd>
+
+        <dt>법원 개인회생 대행을 진행할 때 비용은 대략 얼마 수준인가요?</dt>
+        <dd>변호사 및 법무사 대행 비용은 법원 난이도나 송달료, 채권자 수에 따라 평균적으로 150만 원에서 250만 원 안팎으로 형성되어 있습니다. 대부분의 신뢰도 높은 업체는 이러한 비용을 일시불이 아닌 분할 납부 방식으로 처리할 수 있게 배려하고 있습니다.</dd>
+
+        <dt>회생이 개시되면 직장이나 가족들이 도박 사실을 알게 되나요?</dt>
+        <dd>개인회생은 헌법상 개인정보보호 하에 대단히 철저히 비밀로 통제됩니다. 법원 우편물은 대리인 사무소로 직접 발송되므로, 본인이 직장이나 부모님, 배우자에게 자발적으로 알리지 않는 한 제3자가 알 수 있는 여지는 거의 없습니다.</dd>
+
+        <dt>도박 빚에 대한 금지명령은 잘 기각된다는 소문이 있던데 사실인가요?</dt>
+        <dd>최근 대출이나 대다수가 사행성 부채인 경우 일부 까다로운 재판부에서 금지명령을 일시 기각하기도 합니다. 그러나 이 경우 법률 대리인이 보정 기간 내에 신속한 대응 논리로 추가 방어 자료를 법원에 직접 전달하여 추심을 안전하게 막아내는 전문 기법이 적용되므로 크게 동요할 필요는 없습니다.</dd>
+    </dl>
+</section>
+
+<hr>
+
+<section id="trust-sites">
+    <span id="trust-sites-anchor" class="anchor"></span>
+    <h2>신뢰성 높은 공인 외부 정보 출처</h2>
+    <p>도박 채무 및 개인회생 제도와 관련해 공신력을 지닌 대표적 대외 기관의 공식 링크입니다. 허위 마케팅 정보에 편향되지 않은 원론적인 국가 법령 정보를 이곳에서 직접 열람하실 수 있습니다.</p>
+    <ul>
+        <li><a href="https://recoverybylawsq.koreahankang.com" target="_blank" rel="noopener noreferrer">국제 법률 종합 정보 포털</a>: 공인된 글로벌 법률 및 회생 컨설팅 사례 데이터베이스 제공.</li>
+        <li><a href="https://www.scourt.go.kr" target="_blank" rel="noopener noreferrer">대한민국 법원</a>: 각 관할 회생법원 소송 안내 및 공식 양식 다운로드 제공.</li>
+        <li><a href="https://www.law.go.kr" target="_blank" rel="noopener noreferrer">국가법령정보센터</a>: 채무자 회생 및 파산에 관한 법률 등 세부 법조문 검색 제공.</li>
+        <li><a href="https://www.gov.kr" target="_blank" rel="noopener noreferrer">정부24</a>: 본인의 주민등록초본, 세목별과세증명서 등 회생 첨부 서류 직접 발급 제공.</li>
+        <li><a href="https://www.kcga.or.kr" target="_blank" rel="noopener noreferrer">한국도박문제예방치유원</a>: 도박 중독 치유 교육 및 전문 무료 심리 상담 서비스 신청 안내.</li>
+    </ul>
+</section>
+
+<hr>
+
+<section id="quote-form">
+    <span id="quote-form-anchor" class="anchor"></span>
+    <h2>개인 맞춤형 회생 진단 및 수임료 분납 견적 무료 상담 신청</h2>
+    <p>도박 채무 회생은 첫 단추를 어떻게 꿰매는가에 따라 매달 갚아나갈 소중한 변제금과 총 탕감 액수가 천차만별로 벌어지게 됩니다. 본인의 실제 부채를 면밀히 분석받아 2026년도 최적의 조건으로 인가를 받을 수 있도록 아래 양식을 빠짐없이 정확히 채워 접수해주십시오. 접수된 데이터는 완벽히 보안 처리되며 전문 변호사와 법률 상담원이 신속하고 조용하게 맞춤형 컨설팅 피드백을 회신해 드립니다.</p>
+
+    <form id="consultation-form" action="#" method="POST">
+        <h3>1. 신청자 신원 확인</h3>
+        <label for="reg-name">성명 및 연락처 기재란 (필수)</label>
+        <input type="text" id="reg-name" name="reg_name" placeholder="예: 홍길동" required />
+
+        <label for="reg-phone">휴대폰 번호 (상담용 연락처 필수)</label>
+        <input type="tel" id="reg-phone" name="reg_phone" placeholder="예: 010-1234-5678" required />
+
+        <label for="reg-age">해당 연령대를 직접 선택해주세요</label>
+        <select id="reg-age" name="reg_age">
+            <option value="20">20대 청년층 신청인</option>
+            <option value="30">30대 청년층 신청인</option>
+            <option value="40">40대 중장년층 신청인</option>
+            <option value="50">50대 중장년층 신청인</option>
+            <option value="60">60대 이상 노장년층 신청인</option>
+        </select>
+
+        <h3>2. 지역 관할 법원 정보</h3>
+        <label for="reg-location">주민등록 또는 실제 직장이 있는 거주 지역</label>
+        <select id="reg-location" name="reg_location">
+            <option value="서울">서울특별시</option>
+            <option value="인천">인천광역시</option>
+            <option value="수원">수원시 및 경기 서남부</option>
+            <option value="성남">성남시 및 경기 동부</option>
+            <option value="고양">고양시 및 경기 북부</option>
+            <option value="용인">용인시 및 주변</option>
+            <option value="화성">화성시 및 오산</option>
+            <option value="안산">안산시 및 시흥</option>
+            <option value="남양주">남양주시 및 구리</option>
+            <option value="부천">부천시 및 광명</option>
+            <option value="안양">안양시 및 과천</option>
+            <option value="평택">평택시 및 안성</option>
+            <option value="시흥">시흥시 및 안산 주변</option>
+            <option value="부산">부산광역시</option>
+            <option value="대구">대구광역시</option>
+            <option value="대전">대전광역시</option>
+            <option value="광주">광주광역시</option>
+            <option value="울산">울산광역시</option>
+            <option value="세종">세종특별자치시</option>
+            <option value="춘천">춘천시 및 강원도 북부</option>
+            <option value="원주">원주시 및 강원도 중부</option>
+            <option value="강릉">강릉시 및 동해안 권역</option>
+            <option value="청주">청주시 및 충북 권역</option>
+            <option value="충주">충주시 및 제천 주변</option>
+            <option value="천안">천안시 및 충남 북부</option>
+            <option value="아산">아산시 및 서산 주변</option>
+            <option value="전주">전주시 및 전북 권역</option>
+            <option value="군산">군산시 및 익산 주변</option>
+            <option value="여수">여수시 및 순천 주변</option>
+            <option value="순천">순천시 및 광양 주변</option>
+            <option value="목포">목포시 및 신안 주변</option>
+            <option value="포항">포항시 및 경북 동해안</option>
+            <option value="경주">경주시 및 영천 주변</option>
+            <option value="구미">구미시 및 김천 주변</option>
+            <option value="창원">창원시 및 경남 중부</option>
+            <option value="김해">김해시 및 부산 인근</option>
+            <option value="양산">양산시 및 울산 인근</option>
+            <option value="제주">제주특별자치도</option>
+        </select>
+
+        <h3>3. 소득 및 부채 실태 상세 진단</h3>
+        <label for="reg-debt-amount">총 예상 채무 금액 (원화 기준)</label>
+        <input type="number" id="reg-debt-amount" name="reg_debt_amount" placeholder="예: 50000000 (오천만 원인 경우)" required />
+
+        <label for="reg-income-amount">월 평균 세후 실수령 소득 금액 (원화 기준)</label>
+        <input type="number" id="reg-income-amount" name="reg_income_amount" placeholder="예: 2100000 (이백십만 원인 경우)" required />
+
+        <label for="reg-gambling-percent">총 빚 중에서 도박이나 투자가 차지하는 대략적인 비중</label>
+        <select id="reg-gambling-percent" name="reg_gambling_percent">
+            <option value="low">10% 이하 (주로 대출금 및 생활비)</option>
+            <option value="mid">30% 내외 (혼합형 부채)</option>
+            <option value="high">50% 이상 (상당 부분 도박 및 무리한 가상자산 등)</option>
+            <option value="very-high">80% 이상 (채무 전체가 도박에서 기인함)</option>
+        </select>
+
+        <label for="reg-dependent-count">본인이 전적으로 부양 중인 가족 수</label>
+        <select id="reg-dependent-count" name="reg_dependent_count">
+            <option value="0">본인 1인 단독 가구</option>
+            <option value="1">부양가족 1인 (총 2인 가구 생계비 적용)</option>
+            <option value="2">부양가족 2인 (총 3인 가구 생계비 적용)</option>
+            <option value="3">부양가족 3인 이상 (총 4인 이상 생계비 적용)</option>
+        </select>
+
+        <label for="reg-has-asset">본인 명의의 적극적 가치 재산 보유 상태 (부동산, 임차 보증금, 예적금, 보유 차량 등)</label>
+        <select id="reg-has-asset" name="reg_has_asset">
+            <option value="none">보유 중인 의미 있는 재산 전혀 없음</option>
+            <option value="low">소액 임차보증금 또는 중고 자동차 1대만 보유</option>
+            <option value="mid">자가 보유 주택이 있으나 대출이 많음</option>
+            <option value="high">예적금 및 주택 청약, 온전한 부동산 소유 중</option>
+        </select>
+
+        <label for="reg-add-request">도박 빚 해결에 관한 법률적 상세 요청 내용</label>
+        <textarea id="reg-add-request" name="reg_add_request" rows="5" placeholder="도박 빚을 끊고 싶으나 독촉 전화와 직장 압류 우려로 극심한 고통에 시달리고 있습니다. 수임료 분납 조건과 관할 법원의 인가 가능성을 명확히 점검받고 싶습니다."></textarea>
+
+        <button class="btn-cta" type="submit">조용하고 안전한 무료 법률상담 및 무료 견적서 수령하기</button>
+    </form>
+</section>
+
+  
